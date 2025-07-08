@@ -438,3 +438,11 @@ while run:
                 black_options = check_options(black_pieces, black_locations, 'black')
                 white_options = check_options(white_pieces, white_locations, 'white')
 
+    if winner != '':
+        game_over = True
+        draw_game_over()
+
+    pygame.display.flip()
+pygame.quit()
+
+
